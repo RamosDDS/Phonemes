@@ -1,0 +1,14 @@
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\bin\Debug\net8.0\Phoneme.exe
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\bin\Debug\net8.0\Phoneme.deps.json
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\bin\Debug\net8.0\Phoneme.runtimeconfig.json
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\bin\Debug\net8.0\Phoneme.dll
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\bin\Debug\net8.0\Phoneme.pdb
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.AssemblyInfoInputs.cache
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.AssemblyInfo.vb
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.vbproj.CoreCompileInputs.cache
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.dll
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\refint\Phoneme.dll
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.pdb
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.genruntimeconfig.cache
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\ref\Phoneme.dll
