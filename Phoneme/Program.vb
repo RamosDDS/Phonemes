@@ -1,43 +1,70 @@
-Imports System
+Imports System.IO
 
-Module Program
-    Sub Main(args As String())
-        '**** VARIABLE TO TEST
-        Dim vmemTexPalabraPrueba As String = "DIGITAL SOLUTIONS"
-        Dim vmemDiccionarioFonemas As Dictionary(Of String, ArrayList) = diccionarioObtenerFonemasComoDiccionario(vmemTexPalabraPrueba)
-        Console.WriteLine("Fonemas Vocàlicos : " & String.Join(", ", vmemDiccionarioFonemas("FonemasVocalicos").ToArray()))
-        Console.WriteLine("Fonemas consonànticos : " & String.Join(", ", vmemDiccionarioFonemas("FonemasConsonanticos").ToArray()))
+Module Module1
+    Sub Main()
+        Dim vmemFrase As String = "ca"
+        Dim vmemDiccionarioFonemas As Dictionary(Of String, String) = AnalizarFrase(vmemFrase)
     End Sub
 
-    Function diccionarioObtenerFonemasComoDiccionario(vparTexPalabraPrueba As String) As Dictionary(Of String, ArrayList)
-        Dim vlocDiccionarioFonemasConsonanticos As New Dictionary(Of Char, String) From {
-            {"b"c, "/B/"}, {"c"c, "/C/"}, {"d"c, "/D/"}, {"f"c, "/F/"}, {"g"c, "/G/"}, {"h"c, "/H/"}, {"j"c, "/J/"}, {"k"c, "/K/"}, {"l"c, "/L/"}, {"m"c, "/M/"},
-            {"n"c, "/N/"}, {"ñ"c, "/Ñ/"}, {"p"c, "/P/"}, {"q"c, "/Q/"}, {"r"c, "/R/"}, {"s"c, "/S/"}, {"t"c, "/T/"}, {"v"c, "/V/"}, {"w"c, "/W/"}, {"x"c, "/X/"}, {"y"c, "/Y/"}, {"z"c, "/Z/"}
-        }
+    Function AnalizarFrase(frase As String) As Dictionary(Of String, String)
+        Dim vlocDiccionarioFonemas As New Dictionary(Of String, String)
+        Dim triptongos As Dictionary(Of String, String) = ObtenerDiccionarioDesdeArchivo("../../../resourses/tripthongDictionary.txt")
+        Dim diptongos As Dictionary(Of String, String) = ObtenerDiccionarioDesdeArchivo("../../../resourses/diphthongDictionary.txt")
 
-        Dim vlocDiccionarioFonemasVocalicos As New Dictionary(Of Char, String) From {
-            {"a"c, "/A/"}, {"e"c, "/E/"}, {"i"c, "/I/"}, {"o"c, "/O/"}, {"u"c, "/U/"}
-        }
+        Dim vlocArrTriptongos As New List(Of String)()
+        Dim vlocArrDiptongos As New List(Of String)()
+        Dim vlocArrConsonanticos As New List(Of String)()
 
-        vparTexPalabraPrueba = vparTexPalabraPrueba.ToLower()
 
-        Dim vlocArrFonemasVocalicos As New ArrayList()
-        Dim vlocArrFonemasConsonanticos As New ArrayList()
+        Dim palabras As String() = frase.Split(" "c)
 
-        For Each c As Char In vparTexPalabraPrueba
-            If vlocDiccionarioFonemasConsonanticos.ContainsKey(c) Then
-                vlocArrFonemasConsonanticos.Add(vlocDiccionarioFonemasConsonanticos(c))
-            ElseIf vlocDiccionarioFonemasVocalicos.ContainsKey(c) Then
-                vlocArrFonemasVocalicos.Add(vlocDiccionarioFonemasVocalicos(c))
+        For Each palabra In palabras
+
+            If diptongos.ContainsKey(palabra) Then
+                Console.WriteLine(diptongos(palabra))
             End If
+            Console.WriteLine(palabra)
         Next
 
-        Dim vlocDiccionarioResultadoFonemas As New Dictionary(Of String, ArrayList) From {
-            {"FonemasVocalicos", vlocArrFonemasVocalicos},
-            {"FonemasConsonanticos", vlocArrFonemasConsonanticos}
-        }
 
-        Return vlocDiccionarioResultadoFonemas
+        Return vlocDiccionarioFonemas
     End Function
+
+    Function ObtenerDiccionarioDesdeArchivo(rutaArchivo As String) As Dictionary(Of String, String)
+        ' Verificar si el archivo existe
+        If File.Exists(rutaArchivo) Then
+            ' Crear un diccionario para almacenar los pares clave-valor
+            Dim diccionario As New Dictionary(Of String, String)
+
+            ' Leer todas las líneas del archivo
+            Dim lineas As String() = File.ReadAllLines(rutaArchivo)
+
+            ' Procesar cada línea y agregar al diccionario
+            For Each linea In lineas
+                Dim partes As String() = linea.Split("="c)
+
+                ' Verificar que la línea tiene el formato esperado
+                If partes.Length = 2 Then
+                    Dim clave As String = partes(0)
+                    Dim valor As String = partes(1)
+
+                    ' Agregar al diccionario
+                    diccionario.Add(clave, valor)
+                Else
+                    Console.WriteLine("Formato incorrecto en la línea: " & linea)
+                End If
+            Next
+
+            ' Devolver el diccionario
+            Return diccionario
+        Else
+            Console.WriteLine("El archivo no existe en la ruta especificada.")
+            ' Devolver null si el archivo no existe
+            Return Nothing
+        End If
+    End Function
+
+
 End Module
+
 

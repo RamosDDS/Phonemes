@@ -12,3 +12,4 @@ C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\refint
 C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.pdb
 C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.genruntimeconfig.cache
 C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\ref\Phoneme.dll
+C:\Users\dsedu\Desktop\DIGITAL_SOLUTIONS\Phoneme\Phoneme\obj\Debug\net8.0\Phoneme.sourcelink.json

@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("Phoneme"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26eb1c3aa5646d0373c7b4a99f3ef2df7578b102"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("Phoneme"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("Phoneme"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")> 
