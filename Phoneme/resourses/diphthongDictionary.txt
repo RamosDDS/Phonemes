@@ -1,3 +1,13 @@
-ca=/ka/
-sa=/sa/
-pe=/pe/
+ai=/ai/
+oi=/oi/
+ei=/ei/
+au=/au/
+eu=/eu/
+iu=/iu/
+ui=/ui/
+ia=/ia/
+ie=/ie/
+io=/io/
+ua=/ua/
+ue=/ue/
+uo=/uo/

@@ -1,0 +1,7 @@
+iai=/iai/
+uei=/uei/
+iei=/iei/
+uai=/uai/
+uau=/uau/
+iau=/iau/
+uie=/uie/

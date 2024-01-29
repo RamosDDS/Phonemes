@@ -8,23 +8,23 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\dsedu\\.nuget\\packages\\": {},
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dsedu\\Desktop\\DIGITAL_SOLUTIONS\\Phoneme\\Phoneme\\Phoneme.vbproj",
+      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\Dev\\Phonemes\\Phoneme\\Phoneme.vbproj",
       "projectName": "Phoneme",
-      "projectPath": "C:\\Users\\dsedu\\Desktop\\DIGITAL_SOLUTIONS\\Phoneme\\Phoneme\\Phoneme.vbproj",
-      "packagesPath": "C:\\Users\\dsedu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dsedu\\Desktop\\DIGITAL_SOLUTIONS\\Phoneme\\Phoneme\\obj\\",
+      "projectPath": "C:\\Users\\Usuario\\Desktop\\Dev\\Phonemes\\Phoneme\\Phoneme.vbproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Usuario\\Desktop\\Dev\\Phonemes\\Phoneme\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\dsedu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,7 +33,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

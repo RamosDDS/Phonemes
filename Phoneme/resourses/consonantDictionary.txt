@@ -1,0 +1,12 @@
+tr=/tr/
+cl=/cl/
+vl=/vl/
+cr=/cr/
+gl=/gl/
+pr=/pr/
+fr=/fr/
+bl=/bl/
+gr=/gr/
+fl=/fl/
+pl=/pl/
+br=/br/
